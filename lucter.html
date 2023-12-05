@@ -1,0 +1,8 @@
+CREATE TABLE Lectures (
+    LectureID INT AUTO_INCREMENT PRIMARY KEY,
+    LectureName VARCHAR(255) NOT NULL,
+    Date DATE NOT NULL,
+    Location VARCHAR(255) NOT NULL,
+    CourseID INT,
+    FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
+);
